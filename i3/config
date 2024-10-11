@@ -215,7 +215,7 @@ bindsym Print exec scrot '/home/varunvelpula/Pictures/Screenshot_%a-%d%b%y_%H.%M
 # window rules, you can find the window class using xprop
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
-for_window [class=".*"] border pixel 5
+for_window [class=".*"] border pixel 0
 hide_edge_borders smart
-gaps inner 5
+gaps inner 20
 smart_gaps on
