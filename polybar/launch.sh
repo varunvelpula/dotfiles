@@ -22,4 +22,8 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch polybar
-polybar top &
+polybar main -c $(dirname $0)/config.ini &
+
+if [[ $(xrandr -q | grep 'HDMI1 connected') ]]; then
+	polybar external -c $(dirname $0)/config.ini &
+fi
